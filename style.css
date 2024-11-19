@@ -13,11 +13,15 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-section {
     flex: 1;
     margin: 0 20px;
+    max-width: 300px; /* Prevent sections from stretching too much */
+    box-sizing: border-box;
 }
 
 .footer-section h3 {
@@ -53,7 +57,7 @@
     margin: 0;
 }
 
-/* for mobile incase we need it  */
+/* Responsive design for mobile */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -62,6 +66,7 @@
 
     .footer-section {
         margin-bottom: 20px;
+        max-width: 100%; /* Ensure each section takes full width on small screens */
     }
 
     .social-links a {
